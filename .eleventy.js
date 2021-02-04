@@ -1,11 +1,14 @@
 module.exports = (config) => {
-  config.addWatchTarget('./site/css/')
+  config.addWatchTarget('./site/_styles/')
+  config.addWatchTarget('./site/js/')
+  config.addPassthroughCopy({ 'site/fonts': 'css/fonts' })
+  config.addPassthroughCopy({ 'site/js': 'js' })
   return {
     dir: {
       input: 'site',
-      includes: '../includes',
+      includes: '_includes',
       output: 'build',
-      data: '../data',
+      data: '_data',
     },
   }
 }
