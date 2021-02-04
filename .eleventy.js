@@ -1,8 +1,11 @@
 module.exports = (config) => {
+  config.addWatchTarget('./site/css/')
   return {
     dir: {
-      input: 'src',
+      input: 'site',
+      includes: '../includes',
       output: 'build',
+      data: '../data',
     },
   }
 }

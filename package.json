@@ -4,16 +4,20 @@
   "description": "etovoteto.ru",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "pnpx eleventy --serve"
+    "dev": "pnpm run clean && pnpx eleventy --serve",
+    "clean": "rm -rf build",
+    "build": "pnpm run clean && pnpx eleventy"
   },
   "keywords": [
-    "web-site",
+    "website",
     "11ty"
   ],
   "author": "DeFUCC",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1"
+  },
+  "dependencies": {
+    "stylus": "^0.54.8"
   }
 }

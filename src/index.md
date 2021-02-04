@@ -1,5 +1,0 @@
----
-layout: main.pug
----
-
-Hey!

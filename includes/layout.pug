@@ -1,0 +1,27 @@
+doctype html
+html(lang=meta.lang)
+  head
+    meta(charset='UTF-8')
+    link(rel='icon', href='/favicon.ico')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content=meta.description)
+    link(rel='canonical', href=meta.url)
+    meta(property='og:site_name', content=meta.title)
+    meta(property='og:type', content='website')
+    meta(property='og:locale', content=meta.locale)
+    meta(property='og:title', content=meta.title)
+    meta(property='og:description', content=meta.description)
+    meta(property='og:url', content=meta.url)
+    meta(property='twitter:card', content='summary')
+    meta(property='twitter:domain', content='etovoteto.ru')
+    meta(property='twitter:title', content=meta.title)
+    meta(property='twitter:description', content=meta.description)
+    meta(name='theme-color', content='#f3f3f3')
+    meta(property='og:image', content=meta.image, itemprop='image')
+    title!=meta.title
+    block styles
+      link(rel="stylesheet", href="css/style.css")
+    block scripts
+  body
+    block body
+    section!=content
