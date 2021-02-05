@@ -2,6 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const util = require('util')
 const stylus = require('stylus')
+const csso = require('csso')
 
 const readFile = util.promisify(fs.readFile)
 
@@ -19,7 +20,7 @@ module.exports = class {
     const str = await readFile(inputFile, { encoding: 'utf-8' })
 
     const styl = stylus(str).set('filename', inputFile)
-
-    return styl.render()
+    const css = styl.render()
+    return csso.minify(css).css
   }
 }

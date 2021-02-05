@@ -1,4 +1,5 @@
 dependencies:
+  csso: 4.2.0
   rollup: 2.38.5
   rollup-plugin-terser: 7.0.2_rollup@2.38.5
   stylus: 0.54.8
@@ -675,6 +676,15 @@ packages:
     dev: false
     resolution:
       integrity: sha1-pGjuZnwW2BzPBcWMONKpfHgNv9Q=
+  /css-tree/1.1.2:
+    dependencies:
+      mdn-data: 2.0.14
+      source-map: 0.6.1
+    dev: false
+    engines:
+      node: '>=8.0.0'
+    resolution:
+      integrity: sha512-wCoWush5Aeo48GLhfHPbmvZs59Z+M7k5+B1xDnXbdWNcEF423DoFdqSWE0PM5aNk5nI5cp1q7ms36zGApY/sKQ==
   /css/2.2.4:
     dependencies:
       inherits: 2.0.4
@@ -684,6 +694,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-oUnjmWpy0niI3x/mPL8dVEI1l7MnG3+HHyRPHf+YFSbK+svOhXpmSOcDURUh2aOCgl2grzrOPt1nHLuCVFULLw==
+  /csso/4.2.0:
+    dependencies:
+      css-tree: 1.1.2
+    dev: false
+    engines:
+      node: '>=8.0.0'
+    resolution:
+      integrity: sha512-wvlcdIbf6pwKEk7vHj8/Bkc0B4ylXZruLvOgs9doS5eOsOpuodOV2zJChSpkp+pRpYQLQMeF04nr3Z68Sta9jA==
   /date-time/0.1.1:
     dev: true
     engines:
@@ -1554,6 +1572,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-hs2NawTJ8wfAWmuUGZBtA2D7E6I=
+  /mdn-data/2.0.14:
+    dev: false
+    resolution:
+      integrity: sha512-dn6wd0uw5GsdswPFfsgMp5NSB0/aDe6fK94YJV/AJDYXL6HVLWBsxeq7js7Ad+mU2K9LAlwpk6kN2D5mwCPVow==
   /mdurl/1.0.1:
     dev: true
     resolution:
@@ -2744,6 +2766,7 @@ packages:
       integrity: sha1-AI4G2AlDIMNy28L47XagymyKxBk=
 specifiers:
   '@11ty/eleventy': ^0.11.1
+  csso: ^4.2.0
   rollup: ^2.38.5
   rollup-plugin-terser: ^7.0.2
   stylus: ^0.54.8
