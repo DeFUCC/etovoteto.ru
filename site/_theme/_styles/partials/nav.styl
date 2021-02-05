@@ -1,0 +1,23 @@
+nav
+  display: flex
+  flex-flow: row wrap
+  min-height: max-content
+  margin: 0
+  padding: 0
+  font-size: 1.4em
+
+  a, span
+    flex: 1 1 auto
+    display: flex
+    justify-content: center
+    text-decoration: dotted
+    color: var(--text-color)
+    padding: 1em
+    transition: all 300ms ease-in-out
+
+    &:hover
+      background-color: var(--button-secondary)
+
+  .active
+    font-weight: bold
+    background-color: var(--top-bar)

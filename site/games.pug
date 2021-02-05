@@ -1,0 +1,11 @@
+---
+title: 'Коллекция прочих игр в слова'
+layout: layout
+---
+h2!=title
+
+each game in collections.games
+  section
+    h2
+      a(href=game.url)!=game.data.title
+    p!=game.templateContent

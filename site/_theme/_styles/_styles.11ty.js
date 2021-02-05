@@ -6,12 +6,12 @@ const csso = require('csso')
 
 const readFile = util.promisify(fs.readFile)
 
-const inputFile = path.join(__dirname, 'index.styl')
+const inputFile = path.join(__dirname, 'main.styl')
 
 module.exports = class {
   data() {
     return {
-      permalink: 'css/style.css',
+      permalink: 'css/styles.css',
       eleventyExcludeFromCollections: true,
     }
   }

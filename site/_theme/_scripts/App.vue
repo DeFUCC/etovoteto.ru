@@ -11,3 +11,9 @@ function newWord() {
   text.value = generateWords();
 }
 </script>
+
+<style>
+.card {
+  background-color: gray;
+}
+</style>
