@@ -4,9 +4,9 @@
   "description": "etovoteto.ru",
   "main": "index.js",
   "scripts": {
-    "dev": "pnpm run clean && pnpx eleventy --serve",
+    "dev": "NODE_ENV=development pnpm run clean && pnpx eleventy --serve",
     "clean": "rm -rf build",
-    "build": "pnpm run clean && pnpx eleventy"
+    "build": "NODE_ENV=production pnpm run clean && pnpx eleventy"
   },
   "keywords": [
     "website",
@@ -15,12 +15,24 @@
   "author": "DeFUCC",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1"
+    "@11ty/eleventy": "^0.11.1",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.1.1",
+    "@vue/compiler-sfc": "^3.0.5",
+    "csso": "^4.2.0",
+    "pug": "^3.0.0",
+    "rollup": "^2.38.5",
+    "@rollup/plugin-replace": "^2.3.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-vue": "^6.0.0",
+    "stylus": "^0.54.8",
+    "vue": "^3.0.5"
   },
   "dependencies": {
-    "csso": "^4.2.0",
-    "rollup": "^2.38.5",
-    "rollup-plugin-terser": "^7.0.2",
+    "color-hash": "^1.0.3",
+    "gun": "https://github.com/amark/gun.git",
+    "pug": "^3.0.0",
+    "vue": "^3.0.5",
     "stylus": "^0.54.8"
   }
 }
