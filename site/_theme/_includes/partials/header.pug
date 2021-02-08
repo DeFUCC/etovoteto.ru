@@ -1,4 +1,8 @@
 header
-  a(href="/")
-    h1!=meta.title
-    h2!=meta.subtitle
+  .block
+    .title
+      a(href="/")
+        h1!=meta.title
+        h2!=meta.subtitle
+    block nav
+        include nav

@@ -6,6 +6,15 @@ module.exports = (config) => {
   config.addWatchTarget(`./site/${theme}/_styles/`)
   config.addWatchTarget(`./site/${theme}/_scripts/`)
   config.addPassthroughCopy({ [`site/${theme}/_fonts`]: 'css/fonts' })
+  config.addPassthroughCopy({ [`site/img`]: 'img' })
+  config.setPugOptions({
+    filters: {
+      slug: function (text, opt) {
+        console.log(opt, text)
+        return text.toUpperCase()
+      },
+    },
+  })
   return {
     dir: {
       input: 'site',

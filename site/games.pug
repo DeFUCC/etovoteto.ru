@@ -2,10 +2,19 @@
 title: 'Коллекция прочих игр в слова'
 layout: layout
 ---
-h2!=title
+h1(id="top")!=title
+
+a.toTop(href="#top") △
+
+section
+  ul
+    each game in collections.games
+      li
+        strong
+          a(href='#'+game.fileSlug)!=game.data.title
 
 each game in collections.games
   section
-    h2
+    h2(id=game.fileSlug)
       a(href=game.url)!=game.data.title
     p!=game.templateContent

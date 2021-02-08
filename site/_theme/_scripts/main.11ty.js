@@ -1,7 +1,6 @@
 const path = require('path')
 const rollup = require('rollup')
 const { terser } = require('rollup-plugin-terser')
-const vue = require('rollup-plugin-vue')
 const resolve = require('@rollup/plugin-node-resolve')
 const commonjs = require('@rollup/plugin-commonjs')
 const replace = require('@rollup/plugin-replace')
@@ -9,8 +8,7 @@ const replace = require('@rollup/plugin-replace')
 module.exports = class {
   data() {
     return {
-      permalink: 'js/main.js',
-      eleventyExcludeFromCollections: true,
+      permalink: '/js/this.js',
     }
   }
 
@@ -28,7 +26,6 @@ module.exports = class {
         }),
         commonjs(),
         resolve.default(),
-        vue(/* options */),
       ],
     }
     const outputOptions = {

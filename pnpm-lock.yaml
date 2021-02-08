@@ -12,7 +12,7 @@ devDependencies:
   '@vue/compiler-sfc': 3.0.5_vue@3.0.5
   csso: 4.2.0
   eleventy-plugin-youtube-embed: 1.5.0
-  postcss: 8.2.4
+  postcss: 8.2.5
   rollup: 2.38.5
   rollup-plugin-terser: 7.0.2_rollup@2.38.5
   rollup-plugin-vue: 6.0.0_@vue+compiler-sfc@3.0.5
@@ -2377,7 +2377,7 @@ packages:
       node: '>=6.0.0'
     resolution:
       integrity: sha512-3QT8bBJeX/S5zKTTjTCIjRF3If4avAT6kqxcASlTWEtAFCb9NH0OUxNDfgZSWdP5fJnBYCMEWkIFfWeugjzYMg==
-  /postcss/8.2.4:
+  /postcss/8.2.5:
     dependencies:
       colorette: 1.2.1
       nanoid: 3.1.20
@@ -2386,7 +2386,7 @@ packages:
     engines:
       node: ^10 || ^12 || >=14
     resolution:
-      integrity: sha512-kRFftRoExRVXZlwUuay9iC824qmXPcQQVzAjbCCgjpXnkdMCJYBu2gTwAaFBzv8ewND6O8xFb3aELmEkh9zTzg==
+      integrity: sha512-wMcb7BpDcm3gxQOQx46NDNT36Kk0Ao6PJLLI2ed5vehbbbxCEuslSQzbQ2sfSKy+gkYxhWcGWSeaK+gwm4KIZg==
   /pretty-ms/0.2.2:
     dependencies:
       parse-ms: 0.1.2
@@ -3513,7 +3513,7 @@ specifiers:
   csso: ^4.2.0
   eleventy-plugin-youtube-embed: ^1.5.0
   gun: https://github.com/amark/gun.git
-  postcss: ^8.2.4
+  postcss: ^8.2.5
   pug: ^3.0.0
   rollup: ^2.38.5
   rollup-plugin-terser: ^7.0.2

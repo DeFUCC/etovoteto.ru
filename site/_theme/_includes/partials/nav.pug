@@ -1,6 +1,7 @@
 nav
-  each nav in collections.main
-    if page.url==nav.url
-      span.active!=nav.data.title
-    else
-      a(href=nav.url)!=nav.data.title 
+  .menu
+    each nav in collections.main
+      if page.url==nav.url
+        span.active!=nav.data.title
+      else
+        a(href=nav.url)!=nav.data.title
