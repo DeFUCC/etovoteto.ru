@@ -2,12 +2,17 @@ footer
   display: flex
   flex-flow: row wrap
   justify-items: stretch
-  padding: 2em
-  background-color: var(--footer-bg)
   flex: 1 1 100%
 
   div
     text-align: center
+
+#info
+  flex: 1
+  padding: 2em
+  display: flex
+  flex-flow: row wrap
+  background-color: var(--footer-bg)
 
   .one
     flex: 4 120px
@@ -19,7 +24,8 @@ footer
   .three
     flex: 6 200px
 
-footer#nav
+footer nav
+  flex: 1 1 100%
   padding: 0
   font-size: 1rem
   background-color: var(--footer-pre)

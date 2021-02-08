@@ -1,8 +1,7 @@
-footer#nav
-  include nav
-
 footer
-  .one
-    a(href='/')!=meta.title
-  .two!=meta.startYear + '—' + new Date().getFullYear()
-  .three!=meta.support
+  include nav
+  #info 
+    .one
+      a(href='/')!=meta.title
+    .two!=meta.startYear + '—' + new Date().getFullYear()
+    .three!=meta.support
