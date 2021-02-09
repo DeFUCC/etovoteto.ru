@@ -35,6 +35,7 @@
     "gun": "https://github.com/amark/gun.git",
     "pug": "^3.0.0",
     "stylus": "^0.54.8",
+    "vanillajs-scrollspy": "^2.0.3",
     "vue": "^3.0.5"
   }
 }

@@ -1,7 +1,3 @@
-nav
-  .menu
-    each nav in collections.main
-      if page.url==nav.url
-        span.active!=nav.data.title
-      else
-        a(href=nav.url)!=nav.data.title
+nav#nav
+  each article in collections.main
+    a(href='#'+article.fileSlug)!=article.data.title

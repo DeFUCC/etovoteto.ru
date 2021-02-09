@@ -8,6 +8,7 @@
 
 html
   scroll-behavior: smooth
+  hyphens: auto
 
 body
   padding: 0
@@ -28,9 +29,13 @@ body
 
 main
   flex: 100 1 540px
+  display: flex
+  flex-flow: column
+  align-items: center
 
   > article
     max-width: 55ch
+    width: 100%
 
   section
     padding: 2em
@@ -38,6 +43,7 @@ main
 a
   color: var(--text-light)
   text-decoration: none
+  font-weight: bold
 
 a.button
   padding: 2em

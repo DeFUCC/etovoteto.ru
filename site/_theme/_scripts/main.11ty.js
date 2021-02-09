@@ -12,7 +12,7 @@ module.exports = class {
     }
   }
 
-  async render() {
+  async render(val) {
     const inputOptions = {
       input: {
         index: path.join(__dirname, 'main.js'),
