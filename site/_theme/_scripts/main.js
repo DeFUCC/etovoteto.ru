@@ -1,4 +1,3 @@
-console.log('hello from rollup!')
 import VanillaScrollSpy from 'vanillajs-scrollspy'
 import { generateWords } from './use/randomWords'
 
@@ -40,11 +39,12 @@ function scrollSpy() {
         const interSecObs = new IntersectionObserver((entries) => {
           entries.forEach((entry) => {
             const elem = entry.target
-            let currentNav = document.querySelector(`nav a[href='#${elem.id}']`)
-
-            entry.isIntersecting
-              ? currentNav.classList.add('active')
-              : currentNav.classList.remove('active')
+            let currentNav = document.querySelector(`a[href='#${elem.id}']`)
+            if (currentNav) {
+              entry.isIntersecting
+                ? currentNav.classList.add('active')
+                : currentNav.classList.remove('active')
+            }
           })
         }, options)
         interSecObs.observe(target)

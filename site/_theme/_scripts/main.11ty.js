@@ -12,18 +12,21 @@ module.exports = class {
     }
   }
 
+  // @ts-ignore
   async render(val) {
     const inputOptions = {
       input: {
         index: path.join(__dirname, 'main.js'),
       },
       plugins: [
+        // @ts-ignore
         replace({
           'process.env.NODE_ENV': JSON.stringify('development'),
           'process.env.VUE_ENV': JSON.stringify('browser'),
           __VUE_OPTIONS_API__: false,
           __VUE_PROD_DEVTOOLS__: false,
         }),
+        // @ts-ignore
         commonjs(),
         resolve.default(),
       ],
@@ -35,6 +38,7 @@ module.exports = class {
 
     const bundle = await rollup.rollup(inputOptions)
 
+    // @ts-ignore
     const { output } = await bundle.generate(outputOptions)
 
     return output[0].code
