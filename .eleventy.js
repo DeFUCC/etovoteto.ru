@@ -7,6 +7,8 @@ module.exports = (config) => {
   config.addWatchTarget(`./site/${theme}/_scripts/`)
   config.addPassthroughCopy({ [`site/${theme}/_fonts`]: 'css/fonts' })
   config.addPassthroughCopy({ [`site/img`]: 'img' })
+  config.addPassthroughCopy({ [`static`]: '/' })
+
   config.setPugOptions({
     filters: {
       slug: function (text, opt) {

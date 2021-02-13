@@ -39,7 +39,8 @@ function scrollSpy() {
         const interSecObs = new IntersectionObserver((entries) => {
           entries.forEach((entry) => {
             const elem = entry.target
-            let currentNav = document.querySelector(`a[href='#${elem.id}']`)
+            let currentNav = document.querySelector(`a[href='/#${elem.id}']`)
+            console.log(currentNav, elem.id)
             if (currentNav) {
               entry.isIntersecting
                 ? currentNav.classList.add('active')
