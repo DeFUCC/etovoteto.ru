@@ -1,3 +1,6 @@
 nav#nav
   each article in collections.nav
-    a(href='/#'+article.fileSlug)!=article.data.title
+    a(href='/#'+article.fileSlug)
+      span!=article.data.title
+      .spacer
+      include chevron.svg
