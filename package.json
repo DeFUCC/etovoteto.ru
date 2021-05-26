@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "NODE_ENV=development pnpm run clean && pnpx eleventy --serve",
     "clean": "rm -rf build",
-    "build": "NODE_ENV=production pnpm run clean && pnpx eleventy"
+    "build": "NODE_ENV=production pnpm run clean && pnpx eleventy",
+    "deploy": "sh deploy.sh"
   },
   "keywords": [
     "website",
@@ -17,25 +18,25 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "@rollup/plugin-commonjs": "^17.1.0",
-    "@rollup/plugin-node-resolve": "^11.1.1",
-    "@rollup/plugin-replace": "^2.3.4",
-    "@vue/compiler-sfc": "^3.0.5",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "@rollup/plugin-replace": "^2.4.1",
+    "@vue/compiler-sfc": "^3.0.7",
     "csso": "^4.2.0",
     "eleventy-plugin-youtube-embed": "^1.5.0",
-    "postcss": "^8.2.5",
-    "pug": "^3.0.0",
-    "rollup": "^2.38.5",
+    "postcss": "^8.2.7",
+    "pug": "^3.0.2",
+    "rollup": "^2.40.0",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-vue": "^6.0.0",
     "stylus": "^0.54.8",
-    "vue": "^3.0.5"
+    "vue": "^3.0.7"
   },
   "dependencies": {
     "color-hash": "^1.0.3",
     "gun": "https://github.com/amark/gun.git",
-    "pug": "^3.0.0",
+    "pug": "^3.0.2",
     "stylus": "^0.54.8",
     "vanillajs-scrollspy": "^2.0.3",
-    "vue": "^3.0.5"
+    "vue": "^3.0.7"
   }
 }

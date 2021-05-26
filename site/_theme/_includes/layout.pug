@@ -5,8 +5,9 @@ block body
     include partials/header
     
   
-  main(id=(page.id || 'index'))!=content
+  main(id=(page.id || 'index'))
     block main 
+      article!=content
   
     block footer
       include partials/footer
